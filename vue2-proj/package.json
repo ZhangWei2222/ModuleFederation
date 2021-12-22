@@ -1,0 +1,18 @@
+{
+  "name": "vue2-proj",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "webpack --config ../build/webpack.config.vue2.ts"
+  },
+  "dependencies": {
+    "ant-design-vue": "^1.7.4",
+    "vue": "^2.6.11"
+  },
+  "devDependencies": {},
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

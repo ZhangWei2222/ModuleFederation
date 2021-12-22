@@ -1,0 +1,50 @@
+{
+  "name": "module-federation",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.13.8",
+    "@babel/plugin-proposal-class-properties": "^7.13.0",
+    "@babel/plugin-proposal-decorators": "^7.13.5",
+    "@babel/plugin-transform-runtime": "^7.13.9",
+    "@babel/preset-env": "^7.13.9",
+    "@babel/preset-react": "^7.12.13",
+    "@babel/preset-typescript": "^7.13.0",
+    "@vue/compiler-sfc": "^3.0.6",
+    "babel-loader": "^8.2.2",
+    "babel-plugin-import": "^1.13.3",
+    "bundle-loader": "^0.5.6",
+    "css-loader": "^5.1.0",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.2.0",
+    "rimraf": "^3.0.2",
+    "sass": "^1.32.8",
+    "sass-loader": "^11.0.1",
+    "style-loader": "^2.0.0",
+    "ts-loader": "^8.0.17",
+    "vue-loader": "^15.9.6",
+    "vue-loader-v16": "^16.0.0-beta.5.4",
+    "vue-template-compiler": "2.6.14",
+    "webpack": "^5.18.0",
+    "webpack-chain": "^6.5.1",
+    "webpack-cli": "^4.3.1",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.7.3"
+  },
+  "scripts": {
+    "dev:vue2": "webpack-cli serve --config ./build/webpack.config.vue2.js",
+    "build:vue2:dev": "webpack --config ./build/webpack.config.vue2.js",
+    "build:vue2:prod": "webpack --mode production --config ./build/webpack.config.vue2.js",
+    "build:vue2:two:dev": "webpack --config ./build/webpack.config.vue2.two.js",
+    "build:vue3:dev": "webpack --config ./build/webpack.config.vue3.js",
+    "dev:vue3": "webpack-cli serve --config ./build/webpack.config.vue3.js",
+    "dev:react": "webpack-cli serve --config ./build/webpack.config.react.js",
+    "dev:vue2:two": "webpack-cli serve --config ./build/webpack.config.vue2.two.js",
+    "dev:library": "webpack-cli serve --config ./build/webpack.config.library.js",
+    "clean": "rimraf dist"
+  },
+  "dependencies": {
+    "vue": "2.6.14"
+  }
+}
